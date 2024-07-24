@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+    <title>Survey Form</title>
+    <meta charset= 'UTF-8'>
+    <meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0' />
+    <link rel = 'stylesheet' href='./styles.css' />
+  </head>
+
+  <body>
+
+    <header class= 'header-text-center'>
+    <h1 id = 'title'>Rishav Survey Form</h1>
+    <p id = 'description'>Fill in the proper information</p>
+    </header>
+
+    <form id= 'survey-form' class='form'>
+
+      <div class='container'>
+        <label id='name-label' for='name'>Full Name:</label>
+        <input id= 'name' type='text' placeholder= 'Enter your name' required/>
+      </div>
+
+      <div class='form-group'>
+        <label id='email-label' for='email'>Email</label>
+        <input id='email' type='email' placeholder = 'someone@mail.com' required />
+      </div>
+
+      <div class='form-group'>
+        <label id = 'number-label' for = 'number' >Enter age:</label>
+        <input id='number' type='number' min='10' max='120' placeholder = 'Age'required />
+      </div>
+
+      <div class='form-group'>
+        <label id ='dropdown-label' for='dropdown'>Enter desired course:</label>
+        <select id = 'dropdown' name = 'courses'>
+          <option value='eng'>English</option>
+          <option value='math'>Mathematics</option>
+          <option value='programming'>Programming</option>
+        </select>
+      </div>
+
+      <div class='form-group'>
+        <p>Would you tell me your hobby?</p>
+        <label>
+        <input name='hobby' type='radio' value = 'football' checked/>Football</label>
+        <label>
+        <input name= 'hobby' type='radio' value = 'piano'/>Piano</label>
+        <label>
+        <input name= 'hobby' type='radio' value = 'reading'/>Reading</label>
+      </div>
+
+      <div class='form-group'>
+        <p id = 'description'>What is your interest in Career?</p>
+        <label>
+        <input value= 'back-end' type='checkbox' name= 'interest' checked/>Back-end</label>
+        <label>
+        <input value = 'front-end' name= 'interest'type='checkbox'/>
+        Front-end</label>
+        <label>
+        <input value='others' name= 'interest' type='checkbox'/>Others</label>
+      </div>
+
+      <div class='form-group'>
+          <p id ='description'>Any comments or suggestions?</p>
+          <textarea
+            id="projects"
+            class="input-textarea"
+            name="projects"
+            placeholder="Write down the projects you have done..."
+          ></textarea>
+        </div>
+
+        <div form='form-group'>
+          <button id='submit' type='submit' class='submit-button'>Submit</button>
+        </div>
+    </form>
+  </body>
+</html>
